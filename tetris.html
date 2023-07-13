@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <!-- TITLE -->
+    <title>Tetris!</title>
+
+    <!-- CSS -->
+    <link href="tetris.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+
+    <!-- SCRIPTS -->
+    <script defer type="module" src="tetris.js"></script>
+
+</head>
+<body>
+
+    <!-- CONTENT -->
+    <div class="content center">
+
+        <!-- GAME -->
+        <div class="gameDiv">
+
+            <!-- SCORE SUBMISSION -->
+            <div class="scoreForm flexCenter">
+                <form class="form" action="https://www.pixelpolo.dev/tetrisSubmit" method="post">
+                    <input type="text" class="pseudo" name="pseudo" maxlength="15">
+                    <input type="hidden" class="scoreToSubmit" name="scoreToSubmit" value="">
+                    <input type="submit" class="submit" value="Send my score">
+                </form>
+            </div>
+
+            <!-- DISPLAY -->
+            <div class="gameDisplay flexCenter">
+                <canvas class="canvas"></canvas>
+                <div class="gameInfo">
+                    <div class="bestScoreInfo info">
+                        <div>Best score</div>
+                        <div class="bestScore info">0</div>
+                    </div>
+                    <div class="scoreInfo info">
+                        <div>Score</div>
+                        <div class="score">0</div>
+                    </div>
+                    <div class="levelInfo info">
+                        <div>Level</div>
+                        <div class="level">0</div>
+                    </div>
+                    <div class="linesInfo info">
+                        <div>Lines</div>
+                        <div class="lines">0</div>
+                    </div>
+                    <div class="nextPiece info">
+                        <canvas class="nextCanvas"></canvas>
+                    </div>
+                    <div class="gameSettings">
+                        <div><button class="start">START</button></div>
+                    </div>
+                    <div class="gameSettings">
+                        <div><button class="controlsSelector">Controls</button></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTROLS -->
+            <div class="controls flexCenter">
+                <div class="movements">
+                    <div><button class="up">&#x028C;</button></div> <!-- no use yet -->
+                    <div>
+                        <button class="left">&lt;</button> <!-- left -->
+                        <button class="right">&gt;</button> <!-- right -->
+                    </div>
+                    <div><button class="down">v</button></div> <!-- fall down fast -->
+                </div>
+                <div class="rotations flexCenter">
+                    <div>
+                        <button class="a">A</button> <!-- right rotation -->
+                        <button class="b">B</button> <!-- left rotation -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls flexCenter touch hide"></div>
+
+        </div>
+
+    </div>
+    
+
+</body>
+</html>
