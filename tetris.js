@@ -137,66 +137,63 @@ function goOn() {
 
 // ***** UPDATE SPEED *****
 function updateSpeedAndLevel() {
-    if (lines <= 5) {
+    if (lines < 10) {
         levelDiv.textContent = "1";
         speed = 800;
-    } else if (lines === 10) {
+    } else if (lines === 20) {
         levelDiv.textContent = "2";
         speed = 760;
-    } else if (lines === 15) {
+    } else if (lines === 30) {
         levelDiv.textContent = "3";
         speed = 720;
-    } else if (lines === 20) {
+    } else if (lines === 40) {
         levelDiv.textContent = "4";
         speed = 680;
-    } else if (lines === 25) {
+    } else if (lines === 50) {
         levelDiv.textContent = "5";
         speed = 640;
-    } else if (lines === 30) {
+    } else if (lines === 60) {
         levelDiv.textContent = "6";
         speed = 600;
-    } else if (lines === 35) {
+    } else if (lines === 70) {
         levelDiv.textContent = "7";
         speed = 560;
-    } else if (lines === 40) {
+    } else if (lines === 80) {
         levelDiv.textContent = "8";
         speed = 520;
-    } else if (lines === 45) {
+    } else if (lines === 90) {
         levelDiv.textContent = "9";
         speed = 480;
-    } else if (lines === 50) {
+    } else if (lines === 100) {
         levelDiv.textContent = "10";
         speed = 440;
-    } else if (lines === 55) {
+    } else if (lines === 110) {
         levelDiv.textContent = "11";
         speed = 400;
-    } else if (lines === 60) {
+    } else if (lines === 120) {
         levelDiv.textContent = "12";
         speed = 360;
-    } else if (lines === 65) {
+    } else if (lines === 130) {
         levelDiv.textContent = "13";
         speed = 320;
-    } else if (lines === 70) {
+    } else if (lines === 140) {
         levelDiv.textContent = "14";
         speed = 280;
-    } else if (lines === 75) {
+    } else if (lines === 150) {
         levelDiv.textContent = "15";
         speed = 240;
-    } else if (lines === 80) {
+    } else if (lines === 160) {
         levelDiv.textContent = "16";
         speed = 200;
-    } else if (lines === 85) {
+    } else if (lines === 170) {
         levelDiv.textContent = "17";
         speed = 160;
-    } else if (lines === 90) {
+    } else if (lines === 180) {
         levelDiv.textContent = "18";
         speed = 120;
-    } else if (lines === 95) {
+    } else if (lines === 190) {
         levelDiv.textContent = "19";
         speed = 80;
-    } else if (lines === 100) {
-        levelDiv.textContent = "20";
-        speed = 40;
     }
 }
 
