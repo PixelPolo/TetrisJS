@@ -138,6 +138,9 @@ function goOn() {
 // ***** UPDATE SPEED *****
 function updateSpeedAndLevel() {
     if (lines < 10) {
+        levelDiv.textContent = "0";
+        speed = 800;
+    } else if (lines === 10) {
         levelDiv.textContent = "1";
         speed = 800;
     } else if (lines === 20) {
