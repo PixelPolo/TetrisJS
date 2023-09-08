@@ -335,7 +335,7 @@ touchDiv.addEventListener('touchstart', (event) => {
 touchDiv.addEventListener('touchmove', (event) =>  {
     if (touchControls && !gameOver) {
         updateDeltas(event);
-        if (absDX > absDY && absDX > 1.25 * TILE) {
+        if (absDX > absDY && absDX > 2 * TILE) {
             // DIRECTIONS
             if (dX < 0) currentTetrominos.move("left");
             else currentTetrominos.move("right");
